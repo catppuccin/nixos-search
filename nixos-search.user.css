@@ -115,6 +115,29 @@
         border-color: var(--ctp-surface0);
     }
 
+    .dropdown-menu {
+        background-color: var(--ctp-mantle);
+        border: 1px solid var(--ctp-crust);
+        box-shadow: 0 5px 10px var(--ctp-mantle);
+    }
+
+    .dropdown-menu > li > a {
+        color: var(--ctp-text);
+    }
+
+    .dropdown-menu > li > a:hover,
+    .dropdown-menu > li > a:focus,
+    .dropdown-submenu:hover > a,
+    .dropdown-submenu:focus > a {
+        background-color: var(--ctp-overlay0);
+        background-image: none;
+    }
+
+    .dropdown-menu .divider {
+        background-color: var(--ctp-surface0);
+        border-bottom: var(--ctp-surface0);
+    }
+
     .loader {
         color: var(--ctp-crust);
     }
