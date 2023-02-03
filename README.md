@@ -37,8 +37,14 @@
 
 ## Usage
 
-1. [Click here to install](https://github.com/alaidriel/ctp-nixos-search/raw/main/nixos-search.user.css)
-2. Choose your preferred flavour from the Stylus preference dropdown.
+#### Stylus
+1. Install Stylus [Firefox](https://addons.mozilla.org/en-GB/firefox/addon/styl-us/)/[Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) extension.
+2. [Click here to install.](https://github.com/alaidriel/ctp-nixos-search/raw/main/nixos-search.user.css)
+
+#### Stylish
+1. Install Stylish [Firefox](https://addons.mozilla.org/en-GB/firefox/addon/stylish/)/[Chrome](https://chrome.google.com/webstore/detail/stylish-custom-themes-for/fjnbnpbmkenffdnngjfgmeleoegfcffe) extension.
+2. Create a new custom Style that applies to `search.nixos.org`.
+3. Copy content of [nixos-search.user.css](nixos-search.user.css) and paste to created Style.
 
 ## 💝 Thanks to
 
