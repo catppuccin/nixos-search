@@ -72,20 +72,6 @@
         }
     }
 
-    /* :root {
-        --ctp-rosewater: #f5e0dc;
-        --ctp-red: #f38ba8;
-        --ctp-blue: #89b4fa;
-        --ctp-text: #cdd6f4;
-        --ctp-overlay2: #9399b2;
-        --ctp-overlay0: #6c7086;
-        --ctp-surface2: #585b70;
-        --ctp-surface0: #313244;
-        --ctp-base: #1e1e2e;
-        --ctp-mantle: #181825;
-        --ctp-crust: #11111b;
-    }
-   */
     html,
     body {
         background-color: var(--ctp-base);
@@ -116,6 +102,11 @@
         color: var(--ctp-text);
     }
 
+    .search-page > .search-results > div > :nth-child(2) > li.option > :nth-child(2) > div:nth-child(2n) pre code {
+        color: var(--ctp-text);
+        background-color: var(--ctp-mantle);
+    }
+
     .nav-tabs {
         border-bottom: 1px solid var(--ctp-surface0);
     }
@@ -132,7 +123,8 @@
         background-color: var(--ctp-surface0);
     }
 
-    code {
+    code,
+    pre {
         color: var(--ctp-red);
         background-color: var(--ctp-surface0);
         border: none;
@@ -152,8 +144,8 @@
     }
 
     .search-page > .search-results > div > :nth-child(2) > li.package > :nth-child(5) > :nth-child(2) pre {
-        background-color: var(--ctp-base);
-        border: 1px solid var(--ctp-surface0);
+        background-color: var(--ctp-mantle);
+        border: none;
     }
 
     .search-page > .search-results > div > :nth-child(2) > li.package > :nth-child(5) > :nth-child(2) div.tab-content {
@@ -278,6 +270,10 @@
     .navbar .nav > .active > a:focus {
         background-color: var(--ctp-surface0);
         color: var(--ctp-text);
+    }
+
+    .search-page > .search-results > div > :nth-child(2) > li > :first-child {
+        color: var(--ctp-rosewater);
     }
 
     .pager .disabled > a,
