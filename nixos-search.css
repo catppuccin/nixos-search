@@ -1,8 +1,8 @@
 /* ==UserStyle==
-@name           Nixpkgs Search Catppuccin
-@namespace      github.com/alaidriel/ctp-nixpkgs-search
+@name           NixOS Search Catppuccin
+@namespace      github.com/alaidriel/ctp-nixos-search
 @version        0.1.0
-@description    Soothing pastel theme for Nixpkgs Search
+@description    Soothing pastel theme for NixOS Search
 @author         Catppuccin
 @preprocessor   stylus
 @var select theme "Theme" ["latte:Latte", "frappe:Frappe", "macchiato:Macchiato", "mocha:Mocha*"]
