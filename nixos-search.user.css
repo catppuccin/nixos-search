@@ -4,6 +4,7 @@
 @version        0.1.0
 @description    Soothing pastel theme for NixOS Search
 @author         Catppuccin
+@updateURL      https://github.com/alaidriel/ctp-nixos-search/raw/main/nixos-search.user.css
 @preprocessor   stylus
 @var select theme "Theme" ["latte:Latte*", "frappe:Frappe", "macchiato:Macchiato", "mocha:Mocha"]
 ==/UserStyle== */
