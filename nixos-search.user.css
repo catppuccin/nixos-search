@@ -5,7 +5,7 @@
 @description    Soothing pastel theme for NixOS Search
 @author         Catppuccin
 @preprocessor   stylus
-@var select theme "Theme" ["latte:Latte", "frappe:Frappe", "macchiato:Macchiato", "mocha:Mocha*"]
+@var select theme "Theme" ["latte:Latte*", "frappe:Frappe", "macchiato:Macchiato", "mocha:Mocha"]
 ==/UserStyle== */
 @-moz-document domain("search.nixos.org") {
     if (theme=="latte") {
@@ -134,14 +134,14 @@
         color: var(--ctp-text);
     }
 
-    /* installation instruction tabs */
+    /* Installation instructions tabs */
     .nav > li > a:hover,
     .nav > li > a:focus {
         background-color: var(--ctp-overlay0);
         border: 1px solid var(--ctp-overlay0);
     }
 
-    /* experimental label */
+    /* "Experimental" label */
     .label,
     .badge {
         background-color: var(--ctp-blue);
@@ -198,7 +198,7 @@
         border-bottom: var(--ctp-surface0);
     }
 
-    /* override menu item hover color */
+    /* Overrides menu item hover color */
     .search-page > .search-results > div > :first-child > div:first-child > ul > li > a {
         color: var(--ctp-text);
     }
@@ -300,17 +300,17 @@
         background-color: var(--ctp-surface0);
     }
 
-    /* override sidebar labels (number of packages) */
+    .search-page ul.search-sidebar > li > ul > li > a.selected {
+        color: var(--ctp-crust);
+        background-color: var(--ctp-blue);
+    }
+
+    /* Override sidebar labels (number of packages) */
     .search-sidebar .label,
     .search-sidebar .badge {
         background-color: var(--ctp-surface0);
         color: var(--ctp-text);
         text-shadow: none;
-    }
-
-    .search-page ul.search-sidebar > li > ul > li > a.selected {
-        color: var(--ctp-crust);
-        background-color: var(--ctp-blue);
     }
 
     /* Pager */
