@@ -9,37 +9,37 @@
 	<a href="https://github.com/catppuccin/nixos-search/stargazers"><img src="https://img.shields.io/github/stars/catppuccin/nixos-search?colorA=363a4f&colorB=b7bdf8&style=for-the-badge"></a>
 	<a href="https://github.com/catppuccin/nixos-search/issues"><img src="https://img.shields.io/github/issues/catppuccin/nixos-search?colorA=363a4f&colorB=f5a97f&style=for-the-badge"></a>
 	<a href="https://github.com/catppuccin/nixos-search/contributors"><img src="https://img.shields.io/github/contributors/catppuccin/nixos-search?colorA=363a4f&colorB=a6da95&style=for-the-badge"></a>
-  <a href="https://raw.githubusercontent.com/catppuccin/nixos-search/main/nixos-search.user.css"><img src="https://img.shields.io/badge/stylus-install-cba6f7?colorA=363a4f&style=for-the-badge"></a>
+  <a href="nixos-search.user.css?raw=1"><img src="https://img.shields.io/badge/stylus-install-cba6f7?colorA=363a4f&style=for-the-badge"></a>
 </p>
 
 <p align="center">
-	<img src="https://raw.githubusercontent.com/alaidriel/ctp-nixos-search/main/assets/previews/preview.webp"/>
+	<img src="assets/previews/preview.webp"/>
 </p>
 
 ## Previews
 
 <details>
 <summary>🌻 Latte</summary>
-<img src="https://raw.githubusercontent.com/alaidriel/ctp-nixos-search/main/assets/previews/latte.webp"/>
+<img src="assets/previews/latte.webp"/>
 </details>
 <details>
 <summary>🪴 Frappé</summary>
-<img src="https://raw.githubusercontent.com/alaidriel/ctp-nixos-search/main/assets/previews/frappe.webp"/>
+<img src="assets/previews/frappe.webp"/>
 </details>
 <details>
 <summary>🌺 Macchiato</summary>
-<img src="https://raw.githubusercontent.com/alaidriel/ctp-nixos-search/main/assets/previews/macchiato.webp"/>
+<img src="assets/previews/macchiato.webp"/>
 </details>
 <details>
 <summary>🌿 Mocha</summary>
-<img src="https://raw.githubusercontent.com/alaidriel/ctp-nixos-search/main/assets/previews/mocha.webp"/>
+<img src="assets/previews/mocha.webp"/>
 </details>
 
 ## Usage
 
 #### Stylus
 1. Install Stylus [Firefox](https://addons.mozilla.org/en-GB/firefox/addon/styl-us/)/[Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) extension.
-2. [Click here to install.](https://github.com/alaidriel/ctp-nixos-search/raw/main/nixos-search.user.css)
+2. [Click here to install.](nixos-search.user.css?raw=1)
 
 #### Stylish
 1. Install Stylish [Firefox](https://addons.mozilla.org/en-GB/firefox/addon/stylish/)/[Chrome](https://chrome.google.com/webstore/detail/stylish-custom-themes-for/fjnbnpbmkenffdnngjfgmeleoegfcffe) extension.
