@@ -9,7 +9,7 @@
 	<a href="https://github.com/catppuccin/nixos-search/stargazers"><img src="https://img.shields.io/github/stars/catppuccin/nixos-search?colorA=363a4f&colorB=b7bdf8&style=for-the-badge"></a>
 	<a href="https://github.com/catppuccin/nixos-search/issues"><img src="https://img.shields.io/github/issues/catppuccin/nixos-search?colorA=363a4f&colorB=f5a97f&style=for-the-badge"></a>
 	<a href="https://github.com/catppuccin/nixos-search/contributors"><img src="https://img.shields.io/github/contributors/catppuccin/nixos-search?colorA=363a4f&colorB=a6da95&style=for-the-badge"></a>
-  <a href="nixos-search.user.css?raw=1"><img src="https://img.shields.io/badge/stylus-install-cba6f7?colorA=363a4f&style=for-the-badge"></a>
+  <a href="catppuccin.user.css?raw=1"><img src="https://img.shields.io/badge/stylus-install-cba6f7?colorA=363a4f&style=for-the-badge"></a>
 </p>
 
 <p align="center">
@@ -39,12 +39,12 @@
 
 #### Stylus
 1. Install Stylus [Firefox](https://addons.mozilla.org/en-GB/firefox/addon/styl-us/)/[Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) extension.
-2. [Click here to install.](nixos-search.user.css?raw=1)
+2. [Click here to install.](catppuccin.user.css?raw=1)
 
 #### Stylish
 1. Install Stylish [Firefox](https://addons.mozilla.org/en-GB/firefox/addon/stylish/)/[Chrome](https://chrome.google.com/webstore/detail/stylish-custom-themes-for/fjnbnpbmkenffdnngjfgmeleoegfcffe) extension.
 2. Create a new custom Style that applies to `search.nixos.org`.
-3. Copy content of [nixos-search.user.css](nixos-search.user.css) and paste to created Style.
+3. Copy content of [catppuccin.user.css](catppuccin.user.css) and paste to created Style.
 
 ## 💝 Thanks to
 
