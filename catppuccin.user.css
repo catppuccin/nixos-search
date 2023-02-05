@@ -11,7 +11,6 @@
 @-moz-document domain("search.nixos.org") {
     if (theme=="latte") {
         :root {
-            --ctp-rosewater: #dc8a78;
             --ctp-red: #d20f39;
             --ctp-blue: #1e66f5;
             --ctp-text: #4c4f69;
@@ -28,7 +27,6 @@
 
     else if (theme=="frappe") {
         :root {
-            --ctp-rosewater: #f2d5cf;
             --ctp-red: #e78284;
             --ctp-blue: #8caaee;
             --ctp-text: #c6d0f5;
@@ -45,7 +43,6 @@
 
     else if (theme=="macchiato") {
         :root {
-            --ctp-rosewater: #f4dbd6;
             --ctp-red: #ed8796;
             --ctp-blue: #8aadf4;
             --ctp-text: #cad3f5;
@@ -62,7 +59,6 @@
 
     else if (theme=="mocha") {
         :root {
-            --ctp-rosewater: #f5e0dc;
             --ctp-red: #f38ba8;
             --ctp-blue: #89b4fa;
             --ctp-text: #cdd6f4;
@@ -281,7 +277,7 @@
     }
 
     .search-page > .search-results > div > :nth-child(2) > li > :first-child {
-        color: var(--ctp-rosewater);
+        color: var(--ctp-blue);
     }
 
     .search-page > .search-results > div > :nth-child(2) > li.package > :nth-child(5) > :nth-child(2) ul.nav-tabs > li > a {
