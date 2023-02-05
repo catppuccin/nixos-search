@@ -194,7 +194,7 @@
     .dropdown-menu > li > a:focus,
     .dropdown-submenu:hover > a,
     .dropdown-submenu:focus > a {
-        background-color: var(--ctp-overlay0);
+        background-color: var(--ctp-surface0);
         background-image: none;
     }
 
