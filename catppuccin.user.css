@@ -94,7 +94,7 @@
     a,
     a:hover,
     a:focus {
-        color: var(--ctp-rosewater);
+        color: var(--ctp-blue);
         outline: none;
     }
 
@@ -123,12 +123,12 @@
 
     .navbar .nav > li > a {
         text-shadow: none;
-        color: var(--ctp-text);
+        color: var(--ctp-subtext0);
     }
 
     .navbar .nav > li > a:focus,
     .navbar .nav > li > a:hover {
-        color: var(--ctp-rosewater);
+        color: var(--ctp-text);
         border: none;
     }
 
@@ -142,8 +142,8 @@
     /* Installation instructions tabs */
     .nav > li > a:hover,
     .nav > li > a:focus {
-        background-color: var(--ctp-overlay0);
-        border: 1px solid var(--ctp-overlay0);
+        background-color: var(--ctp-surface0);
+        border: 1px solid var(--ctp-surface0);
     }
 
     /* "Experimental" label */
@@ -254,7 +254,7 @@
         border-color: var(--ctp-blue);
         box-shadow: inset 0 1px 1px var(--ctp-crust), 0 0 8px var(--ctp-blue);
     }
-    
+
     /* Fix input box placeholder text */
     textarea::placeholder,
     input[type="text"]::placeholder,
