@@ -18,6 +18,7 @@
             --ctp-overlay2: #7c7f93;
             --ctp-overlay0: #9ca0b0;
             --ctp-surface2: #acb0be;
+            --ctp-surface1: #bcc0cc;
             --ctp-surface0: #ccd0da;
             --ctp-base: #eff1f5;
             --ctp-mantle: #e6e9ef;
@@ -34,6 +35,7 @@
             --ctp-overlay2: #949cbb;
             --ctp-overlay0: #737994;
             --ctp-surface2: #626880;
+            --ctp-surface1: #51576d;
             --ctp-surface0: #414559;
             --ctp-base: #303446;
             --ctp-mantle: #292c3c;
@@ -50,6 +52,7 @@
             --ctp-overlay2: #939ab7;
             --ctp-overlay0: #6e738d;
             --ctp-surface2: #5b6078;
+            --ctp-surface1: #494d64;
             --ctp-surface0: #363a4f;
             --ctp-base: #24273a;
             --ctp-mantle: #1e2030;
@@ -66,6 +69,7 @@
             --ctp-overlay2: #9399b2;
             --ctp-overlay0: #6c7086;
             --ctp-surface2: #585b70;
+            --ctp-surface1: #45475a;
             --ctp-surface0: #313244;
             --ctp-base: #1e1e2e;
             --ctp-mantle: #181825;
@@ -163,7 +167,7 @@
     .btn:focus {
         outline: none;
         color: var(--ctp-text);
-        background-color: var(--ctp-overlay0);
+        background-color: var(--ctp-surface1);
     }
 
     .btn:hover,
@@ -171,7 +175,7 @@
     .btn.active,
     .btn.disabled,
     .btn[disabled] {
-        background-color: var(--ctp-overlay0);
+        background-color: var(--ctp-surface1);
         color: var(--ctp-text);
     }
 
@@ -338,14 +342,14 @@
     .pager li > a,
     .pager li > span {
         color: var(--ctp-text);
-        background-color: var(--ctp-surface2);
+        background-color: var(--ctp-surface0);
         border: none;
         border-radius: 5px;
     }
 
     .pager li > a:hover,
     .pager li > a:focus {
-        background-color: var(--ctp-overlay2);
+        background-color: var(--ctp-surface1);
         transition: all;
         transition-duration: 5ms;
     }
@@ -355,7 +359,7 @@
     .pager .disabled > a:focus,
     .pager .disabled > span {
         color: var(--ctp-text);
-        background-color: var(--ctp-surface0);
+        background-color: var(--ctp-mantle);
         border: none;
         border-radius: 5px;
     }
