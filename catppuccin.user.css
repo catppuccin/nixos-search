@@ -15,6 +15,7 @@
             --ctp-red: #d20f39;
             --ctp-blue: #1e66f5;
             --ctp-text: #4c4f69;
+            --ctp-subtext0: #6c6f85;
             --ctp-overlay2: #7c7f93;
             --ctp-overlay0: #9ca0b0;
             --ctp-surface2: #acb0be;
@@ -31,6 +32,7 @@
             --ctp-red: #e78284;
             --ctp-blue: #8caaee;
             --ctp-text: #c6d0f5;
+            --ctp-subtext0: #a5adce;
             --ctp-overlay2: #949cbb;
             --ctp-overlay0: #737994;
             --ctp-surface2: #626880;
@@ -47,6 +49,7 @@
             --ctp-red: #ed8796;
             --ctp-blue: #8aadf4;
             --ctp-text: #cad3f5;
+            --ctp-subtext0: #a5adcb;
             --ctp-overlay2: #939ab7;
             --ctp-overlay0: #6e738d;
             --ctp-surface2: #5b6078;
@@ -63,6 +66,7 @@
             --ctp-red: #f38ba8;
             --ctp-blue: #89b4fa;
             --ctp-text: #cdd6f4;
+            --ctp-subtext0: #a6adc8;
             --ctp-overlay2: #9399b2;
             --ctp-overlay0: #6c7086;
             --ctp-surface2: #585b70;
@@ -249,6 +253,26 @@
     .uneditable-input:focus {
         border-color: var(--ctp-blue);
         box-shadow: inset 0 1px 1px var(--ctp-crust), 0 0 8px var(--ctp-blue);
+    }
+    
+    /* Fix input box placeholder text */
+    textarea::placeholder,
+    input[type="text"]::placeholder,
+    input[type="password"]::placeholder,
+    input[type="datetime"]::placeholder,
+    input[type="datetime-local"]::placeholder,
+    input[type="date"]::placeholder,
+    input[type="month"]::placeholder,
+    input[type="time"]::placeholder,
+    input[type="week"]::placeholder,
+    input[type="number"]::placeholder,
+    input[type="email"]::placeholder,
+    input[type="url"]::placeholder,
+    input[type="search"]::placeholder,
+    input[type="tel"]::placeholder,
+    input[type="color"]::placeholder,
+    .uneditable-input::placeholder {
+        color: var(--ctp-subtext0);
     }
 
     /* Search results */
