@@ -7,157 +7,36 @@
 @updateURL      https://github.com/catppuccin/nixos-search/raw/main/catppuccin.user.css
 @preprocessor   stylus
 @var select theme "Theme" ["latte:Latte*", "frappe:Frappe", "macchiato:Macchiato", "mocha:Mocha"]
-@var select accent "Accent" ["Rosewater", "Flamingo", "Pink", "Mauve", "Red", "Maroon", "Peach", "Yellow", "Green", "Teal", "Blue*", "Sapphire", "Sky", "Lavender"]
+@var select accent "Accent" ["'rosewater'", "'flamingo'", "'pink'", "'mauve'", "'red'", "'maroon'", "'peach'", "'yellow'", "'green'", "'teal'", "'blue'*", "'sapphire'", "'sky'", "'lavender'"]
 ==/UserStyle== */
 @-moz-document domain("search.nixos.org") {
-    if (theme=="latte") {
-        :root {
-            --ctp-rosewater: #dc8a78;
-            --ctp-flamingo: #dd7878;
-            --ctp-pink: #ea76cb;
-            --ctp-mauve: #8839ef;
-            --ctp-red: #d20f39;
-            --ctp-maroon: #e64553;
-            --ctp-peach: #fe640b;
-            --ctp-yellow: #df8e1d;
-            --ctp-green: #40a02b;
-            --ctp-teal: #179299;
-            --ctp-sky: #04a5e5;
-            --ctp-sapphire: #209fb5;
-            --ctp-blue: #1e66f5;
-            --ctp-lavender: #7287fd;
-            --ctp-text: #4c4f69;
-            --ctp-subtext0: #6c6f85;
-            --ctp-overlay2: #7c7f93;
-            --ctp-overlay0: #9ca0b0;
-            --ctp-surface2: #acb0be;
-            --ctp-surface1: #bcc0cc;
-            --ctp-surface0: #ccd0da;
-            --ctp-base: #eff1f5;
-            --ctp-mantle: #e6e9ef;
-            --ctp-crust: #dce0e8;
-        }
-    }
-
-    else if (theme=="frappe") {
-        :root {
-            --ctp-rosewater: #f2d5cf;
-            --ctp-flamingo: #eebebe;
-            --ctp-pink: #f4b8e4;
-            --ctp-mauve: #ca9ee6;
-            --ctp-red: #e78284;
-            --ctp-maroon: #ea999c;
-            --ctp-peach: #ef9f76;
-            --ctp-yellow: #e5c890;
-            --ctp-green: #a6d189;
-            --ctp-teal: #81c8be;
-            --ctp-sky: #99d1db;
-            --ctp-sapphire: #85c1dc;
-            --ctp-blue: #8caaee;
-            --ctp-lavender: #babbf1;
-            --ctp-text: #c6d0f5;
-            --ctp-subtext0: #a5adce;
-            --ctp-overlay2: #949cbb;
-            --ctp-overlay0: #737994;
-            --ctp-surface2: #626880;
-            --ctp-surface1: #51576d;
-            --ctp-surface0: #414559;
-            --ctp-base: #303446;
-            --ctp-mantle: #292c3c;
-            --ctp-crust: #232634;
-        }
-    }
-
-    else if (theme=="macchiato") {
-        :root {
-            --ctp-rosewater: #f4dbd6;
-            --ctp-flamingo: #f0c6c6;
-            --ctp-pink: #f5bde6;
-            --ctp-mauve: #c6a0f6;
-            --ctp-red: #ed8796;
-            --ctp-maroon: #ee99a0;
-            --ctp-peach: #f5a97f;
-            --ctp-yellow: #eed49f;
-            --ctp-green: #a6da95;
-            --ctp-teal: #8bd5ca;
-            --ctp-sky: #91d7e3;
-            --ctp-sapphire: #7dc4e4;
-            --ctp-blue: #8aadf4;
-            --ctp-lavender: #b7bdf8;
-            --ctp-text: #cad3f5;
-            --ctp-subtext0: #a5adcb;
-            --ctp-overlay2: #939ab7;
-            --ctp-overlay0: #6e738d;
-            --ctp-surface2: #5b6078;
-            --ctp-surface1: #494d64;
-            --ctp-surface0: #363a4f;
-            --ctp-base: #24273a;
-            --ctp-mantle: #1e2030;
-            --ctp-crust: #181926;
-        }
-    }
-
-    else if (theme=="mocha") {
-        :root {
-            --ctp-rosewater: #f5e0dc;
-            --ctp-flamingo: #f2cdcd;
-            --ctp-pink: #f5c2e7;
-            --ctp-mauve: #cba6f7;
-            --ctp-red: #f38ba8;
-            --ctp-maroon: #eba0ac;
-            --ctp-peach: #fab387;
-            --ctp-yellow: #f9e2af;
-            --ctp-green: #a6e3a1;
-            --ctp-teal: #94e2d5;
-            --ctp-sky: #89dceb;
-            --ctp-sapphire: #74c7ec;
-            --ctp-blue: #89b4fa;
-            --ctp-lavender: #b4befe;
-            --ctp-text: #cdd6f4;
-            --ctp-subtext0: #a6adc8;
-            --ctp-overlay2: #9399b2;
-            --ctp-overlay0: #6c7086;
-            --ctp-surface2: #585b70;
-            --ctp-surface1: #45475a;
-            --ctp-surface0: #313244;
-            --ctp-base: #1e1e2e;
-            --ctp-mantle: #181825;
-            --ctp-crust: #11111b;
-        }
-    }
-
-    :root {    
-        if (accent=="Rosewater") {
-              --ctp-accent: var(--ctp-rosewater);
-        } else if (accent=="Flamingo") {
-              --ctp-accent: var(--ctp-flamingo);
-        } else if (accent=="Pink") {
-              --ctp-accent: var(--ctp-pink);
-        } else if (accent=="Mauve") {
-              --ctp-accent: var(--ctp-mauve);
-        } else if (accent=="Red") {
-              --ctp-accent: var(--ctp-red);
-        } else if (accent=="Maroon") {
-              --ctp-accent: var(--ctp-maroon);
-        } else if (accent=="Peach") {
-              --ctp-accent: var(--ctp-peach);
-        } else if (accent=="Yellow") {
-              --ctp-accent: var(--ctp-yellow);
-        } else if (accent=="Green") {
-              --ctp-accent: var(--ctp-green);
-        } else if (accent=="Teal") {
-              --ctp-accent: var(--ctp-teal);
-        } else if (accent=="Blue") {
-              --ctp-accent: var(--ctp-blue);
-        } else if (accent=="Sapphire") {
-              --ctp-accent: var(--ctp-sapphire);
-        } else if (accent=="Sky") {
-              --ctp-accent: var(--ctp-sky);
-        } else if (accent=="Lavender") {
-              --ctp-accent: var(--ctp-lavender);
-        } else if (accent=="Text") {
-              --ctp-accent: var(--ctp-text);
-        }
+    @import url("https://unpkg.com/@catppuccin/palette@0.1.6/css/catppuccin.css");
+    :root { 
+        --ctp-rosewater: var(--ctp- + theme + "-rosewater");
+        --ctp-flamingo: var(--ctp- + theme + "-flamingo");
+        --ctp-pink: var(--ctp- + theme + "-pink");
+        --ctp-mauve: var(--ctp- + theme + "-mauve");
+        --ctp-red: var(--ctp- + theme + "-red");
+        --ctp-maroon: var(--ctp- + theme + "-maroon");
+        --ctp-peach: var(--ctp- + theme + "-peach");
+        --ctp-yellow: var(--ctp- + theme + "-yellow");
+        --ctp-green: var(--ctp- + theme + "-green");
+        --ctp-teal: var(--ctp- + theme + "-teal");
+        --ctp-sky: var(--ctp- + theme + "-sky");
+        --ctp-sapphire: var(--ctp- + theme + "-sapphire");
+        --ctp-blue: var(--ctp- + theme + "-blue");
+        --ctp-lavender: var(--ctp- + theme + "-lavender");
+        --ctp-text: var(--ctp- + theme + "-text");
+        --ctp-subtext0: var(--ctp- + theme + "-subtext0");
+        --ctp-overlay2: var(--ctp- + theme + "-overlay2");
+        --ctp-overlay0: var(--ctp- + theme + "-overlay0");
+        --ctp-surface2: var(--ctp- + theme + "-surface2");
+        --ctp-surface1: var(--ctp- + theme + "-surface1");
+        --ctp-surface0: var(--ctp- + theme + "-surface0");
+        --ctp-base: var(--ctp- + theme + "-base");
+        --ctp-mantle: var(--ctp- + theme + "-mantle");
+        --ctp-crust: var(--ctp- + theme + "-crust");
+        --ctp-accent: var(--ctp- + accent);
     }
 
     /* Generic */
