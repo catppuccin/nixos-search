@@ -7,74 +7,36 @@
 @updateURL      https://github.com/catppuccin/nixos-search/raw/main/catppuccin.user.css
 @preprocessor   stylus
 @var select theme "Theme" ["latte:Latte*", "frappe:Frappe", "macchiato:Macchiato", "mocha:Mocha"]
+@var select accent "Accent" ["'rosewater'", "'flamingo'", "'pink'", "'mauve'", "'red'", "'maroon'", "'peach'", "'yellow'", "'green'", "'teal'", "'blue'*", "'sapphire'", "'sky'", "'lavender'"]
 ==/UserStyle== */
 @-moz-document domain("search.nixos.org") {
-    if (theme=="latte") {
-        :root {
-            --ctp-red: #d20f39;
-            --ctp-blue: #1e66f5;
-            --ctp-text: #4c4f69;
-            --ctp-subtext0: #6c6f85;
-            --ctp-overlay2: #7c7f93;
-            --ctp-overlay0: #9ca0b0;
-            --ctp-surface2: #acb0be;
-            --ctp-surface1: #bcc0cc;
-            --ctp-surface0: #ccd0da;
-            --ctp-base: #eff1f5;
-            --ctp-mantle: #e6e9ef;
-            --ctp-crust: #dce0e8;
-        }
-    }
-
-    else if (theme=="frappe") {
-        :root {
-            --ctp-red: #e78284;
-            --ctp-blue: #8caaee;
-            --ctp-text: #c6d0f5;
-            --ctp-subtext0: #a5adce;
-            --ctp-overlay2: #949cbb;
-            --ctp-overlay0: #737994;
-            --ctp-surface2: #626880;
-            --ctp-surface1: #51576d;
-            --ctp-surface0: #414559;
-            --ctp-base: #303446;
-            --ctp-mantle: #292c3c;
-            --ctp-crust: #232634;
-        }
-    }
-
-    else if (theme=="macchiato") {
-        :root {
-            --ctp-red: #ed8796;
-            --ctp-blue: #8aadf4;
-            --ctp-text: #cad3f5;
-            --ctp-subtext0: #a5adcb;
-            --ctp-overlay2: #939ab7;
-            --ctp-overlay0: #6e738d;
-            --ctp-surface2: #5b6078;
-            --ctp-surface1: #494d64;
-            --ctp-surface0: #363a4f;
-            --ctp-base: #24273a;
-            --ctp-mantle: #1e2030;
-            --ctp-crust: #181926;
-        }
-    }
-
-    else if (theme=="mocha") {
-        :root {
-            --ctp-red: #f38ba8;
-            --ctp-blue: #89b4fa;
-            --ctp-text: #cdd6f4;
-            --ctp-subtext0: #a6adc8;
-            --ctp-overlay2: #9399b2;
-            --ctp-overlay0: #6c7086;
-            --ctp-surface2: #585b70;
-            --ctp-surface1: #45475a;
-            --ctp-surface0: #313244;
-            --ctp-base: #1e1e2e;
-            --ctp-mantle: #181825;
-            --ctp-crust: #11111b;
-        }
+    @import url("https://unpkg.com/@catppuccin/palette@0.1.6/css/catppuccin.css");
+    :root { 
+        --ctp-rosewater: var(--ctp- + theme + "-rosewater");
+        --ctp-flamingo: var(--ctp- + theme + "-flamingo");
+        --ctp-pink: var(--ctp- + theme + "-pink");
+        --ctp-mauve: var(--ctp- + theme + "-mauve");
+        --ctp-red: var(--ctp- + theme + "-red");
+        --ctp-maroon: var(--ctp- + theme + "-maroon");
+        --ctp-peach: var(--ctp- + theme + "-peach");
+        --ctp-yellow: var(--ctp- + theme + "-yellow");
+        --ctp-green: var(--ctp- + theme + "-green");
+        --ctp-teal: var(--ctp- + theme + "-teal");
+        --ctp-sky: var(--ctp- + theme + "-sky");
+        --ctp-sapphire: var(--ctp- + theme + "-sapphire");
+        --ctp-blue: var(--ctp- + theme + "-blue");
+        --ctp-lavender: var(--ctp- + theme + "-lavender");
+        --ctp-text: var(--ctp- + theme + "-text");
+        --ctp-subtext0: var(--ctp- + theme + "-subtext0");
+        --ctp-overlay2: var(--ctp- + theme + "-overlay2");
+        --ctp-overlay0: var(--ctp- + theme + "-overlay0");
+        --ctp-surface2: var(--ctp- + theme + "-surface2");
+        --ctp-surface1: var(--ctp- + theme + "-surface1");
+        --ctp-surface0: var(--ctp- + theme + "-surface0");
+        --ctp-base: var(--ctp- + theme + "-base");
+        --ctp-mantle: var(--ctp- + theme + "-mantle");
+        --ctp-crust: var(--ctp- + theme + "-crust");
+        --ctp-accent: var(--ctp- + accent);
     }
 
     /* Generic */
@@ -94,7 +56,7 @@
     a,
     a:hover,
     a:focus {
-        color: var(--ctp-blue);
+        color: var(--ctp-accent);
         outline: none;
     }
 
@@ -149,7 +111,7 @@
     /* "Experimental" label */
     .label,
     .badge {
-        background-color: var(--ctp-blue);
+        background-color: var(--ctp-accent);
         color: var(--ctp-crust);
         text-shadow: none;
     }
@@ -203,6 +165,10 @@
         border-bottom: var(--ctp-surface0);
     }
 
+    .dropdown .caret {
+        border-top: 4px solid var(--ctp-text);
+    }
+
     /* Overrides menu item hover color */
     .search-page > .search-results > div > :first-child > div:first-child > ul > li > a {
         color: var(--ctp-text);
@@ -251,8 +217,8 @@
     input[type="tel"]:focus,
     input[type="color"]:focus,
     .uneditable-input:focus {
-        border-color: var(--ctp-blue);
-        box-shadow: inset 0 1px 1px var(--ctp-crust), 0 0 8px var(--ctp-blue);
+        border-color: var(--ctp-accent);
+        box-shadow: inset 0 1px 1px var(--ctp-crust), 0 0 8px var(--ctp-accent);
     }
 
     /* Fix input box placeholder text */
@@ -281,7 +247,7 @@
     }
 
     .search-page > .search-results > div > :nth-child(2) > li > :first-child {
-        color: var(--ctp-blue);
+        color: var(--ctp-accent);
     }
 
     .search-page > .search-results > div > :nth-child(2) > li.package > :nth-child(5) > :nth-child(2) ul.nav-tabs > li > a {
@@ -327,7 +293,7 @@
 
     .search-page ul.search-sidebar > li > ul > li > a.selected {
         color: var(--ctp-crust);
-        background-color: var(--ctp-blue);
+        background-color: var(--ctp-accent);
     }
 
     /* Override sidebar labels (number of packages) */
