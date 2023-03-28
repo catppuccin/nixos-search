@@ -1,13 +1,13 @@
 /* ==UserStyle==
 @name           NixOS Search Catppuccin
 @namespace      github.com/catppuccin/nixos-search
-@version        0.1.1
+@version        0.1.2
 @description    Soothing pastel theme for NixOS Search
 @author         Catppuccin
 @updateURL      https://github.com/catppuccin/nixos-search/raw/main/catppuccin.user.css
 @preprocessor   stylus
 @var select theme "Theme" ["latte:Latte*", "frappe:Frappe", "macchiato:Macchiato", "mocha:Mocha"]
-@var select accent "Accent" ["'rosewater'", "'flamingo'", "'pink'", "'mauve'", "'red'", "'maroon'", "'peach'", "'yellow'", "'green'", "'teal'", "'blue'*", "'sapphire'", "'sky'", "'lavender'"]
+@var select accent "Accent" {"Rosewater": "--ctp-rosewater", "Flamingo": "--ctp-flamingo", "Pink": "--ctp-pink", "Mauve": "--ctp-mauve", "Red": "--ctp-red", "Maroon": "--ctp-maroon", "Peach": "--ctp-peach", "Yellow": "--ctp-yellow", "Green": "--ctp-green", "Teal": "--ctp-teal", "Blue*": "--ctp-blue", "Sapphire": "--ctp-sapphire", "Sky": "--ctp-sky", "Lavender": "--ctp-lavender"}
 ==/UserStyle== */
 @-moz-document domain("search.nixos.org") {
     @import url("https://unpkg.com/@catppuccin/palette@0.1.6/css/catppuccin.css");
@@ -36,7 +36,7 @@
         --ctp-base: var(--ctp- + theme + "-base");
         --ctp-mantle: var(--ctp- + theme + "-mantle");
         --ctp-crust: var(--ctp- + theme + "-crust");
-        --ctp-accent: var(--ctp- + accent);
+        --ctp-accent: var(accent);
     }
 
     /* Generic */
